@@ -44,11 +44,11 @@ function validateAgeForm() {
   const month = input_month.value;
   input_month.value = input_month.value.replace(/[^0-9]/g, '');
 
-  if (month === '') {
+  if (month === '' || input_month.value !== month) {
     labelMonth.style.color = 'hsl(0, 100%, 67%)';
     requiredMonth.style.display = 'block';
     input_month.style.border = '1px solid hsl(0, 100%, 67%)';
-    // return false;
+    return false;
   } else if (month === 0 || month > 12 || month < 0) {
     labelMonth.style.color = 'hsl(0, 100%, 67%)';
     errorMonth.style.display = 'block';

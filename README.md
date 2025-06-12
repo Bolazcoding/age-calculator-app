@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Bolazcoding/age-calculator-app)
-- Live Site URL: [Live site URL](https://josedev-advice-generator-app.netlify.app/)
+- Live Site URL: [Live site URL](https://mobolaji-age-calculator-app.vercel.app/)
 
 ### Built with
 
