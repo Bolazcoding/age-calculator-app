@@ -1,0 +1,17 @@
+{
+  "name": "age-calculator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Age calculator app coding challenge](preview.jpg)",
+  "default": "index.html",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss src/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Mobolaji",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.2",
+    "sass": "^1.89.1"
+  }
+}

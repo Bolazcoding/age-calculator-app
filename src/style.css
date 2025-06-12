@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.age-calculator-container {
+  background-color: hsl(0, 100%, 100%);
+  padding: 3rem;
+  max-width: 45rem;
+  margin: 0 auto;
+  border-radius: 1.4rem 1.4rem 10rem;
+}
+
+.date__box {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  position: relative;
+}
+
+.input__box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.input {
+  color: hsl(0, 0%, 0%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  outline: none;
+  padding: 1rem 2rem 1rem 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 1%, 44%);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+.label__name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.1rem;
+}
+
+.logo-validate {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: -35%;
+  right: -2%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logo-validate:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.output__box {
+  padding-top: 1rem;
+}
+
+.output__year,
+.output__month,
+.output__days {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 900;
+  color: hsl(0, 0%, 0%);
+}
+
+.output__year-input,
+.output__month-input,
+.output__day-input {
+  color: hsl(259, 100%, 65%);
+}
+
+.error-day,
+.error-month,
+.error-year,
+.error-required-day,
+.error-required-month,
+.error-required-year {
+  color: hsl(0, 100%, 67%);
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+@media (max-width: 32.5em) {
+  html {
+    font-size: 55%;
+  }
+  .age-calculator-container {
+    max-width: 38rem;
+  }
+  .input {
+    padding: 0.5rem 2rem 0.5rem 0.7rem;
+    font-size: 1.4rem;
+  }
+  .input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 21.875em) {
+  html {
+    font-size: 50%;
+  }
+  .age-calculator-container {
+    max-width: 35rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

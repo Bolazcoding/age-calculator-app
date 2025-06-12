@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$Primary-Purple-500: hsl(259, 100%, 65%);
+$Primary-Red-400: hsl(0, 100%, 67%);
+
+$Neutral-White: hsl(0, 100%, 100%);
+$Grey-100: hsl(0, 0%, 94%);
+$Grey-200: hsl(0, 0%, 86%);
+$Grey-500: hsl(0, 1%, 44%);
+$Black: hsl(0, 0%, 0%);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $Grey-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.age-calculator-container {
+  background-color: $Neutral-White;
+  padding: 3rem;
+  max-width: 45rem;
+  margin: 0 auto;
+  border-radius: 1.4rem 1.4rem 10rem;
+}
+
+.date__box {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid $Grey-200;
+  position: relative;
+}
+
+.input__box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.input {
+  color: $Black;
+  // padding: 0.5rem 2rem 0.5rem 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 1px solid $Grey-200;
+  outline: none;
+  padding: 1rem 2rem 1rem 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: $Grey-500;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input:focus {
+  border: 1px solid $Primary-Purple-500;
+}
+
+.label__name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $Grey-500;
+  letter-spacing: 0.1rem;
+}
+
+.logo-validate {
+  background-color: $Primary-Purple-500;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: -35%;
+  right: -2%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logo-validate:hover {
+  background-color: $Black;
+}
+
+.output__box {
+  padding-top: 1rem;
+}
+
+.output__year,
+.output__month,
+.output__days {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 900;
+  color: $Black;
+}
+
+.output__year-input,
+.output__month-input,
+.output__day-input {
+  color: $Primary-Purple-500;
+}
+
+.error-day,
+.error-month,
+.error-year,
+.error-required-day,
+.error-required-month,
+.error-required-year {
+  color: $Primary-Red-400;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+// 520px
+@media (max-width: 32.5em) {
+  html {
+    font-size: 55%;
+  }
+
+  .age-calculator-container {
+    max-width: 38rem;
+  }
+
+  .input {
+    padding: 0.5rem 2rem 0.5rem 0.7rem;
+    font-size: 1.4rem;
+  }
+
+  .input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+// 350px
+@media (max-width: 21.875em) {
+  html {
+    font-size: 50%;
+  }
+
+  .age-calculator-container {
+    max-width: 35rem;
+  }
+}

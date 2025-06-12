@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="age-calculator-container">
+        <div class="date__box">
+          <div class="input__box">
+            <label class="label__name label__day" for="input__day">Day</label>
+            <input
+              type="text"
+              id="input__day"
+              class="input"
+              maxlength="2"
+              minlength="2"
+              placeholder="DD"
+            />
+
+            <p class="error-day">Must be a valid day</p>
+            <p class="error-required-day">This field is required</p>
+          </div>
+
+          <div class="input__box">
+            <label class="label__name label__month" for="input__month"
+              >Month</label
+            >
+            <input
+              type="text"
+              class="input"
+              id="input__month"
+              maxlength="2"
+              minlength="2"
+              placeholder="MM"
+            />
+
+            <p class="error-month">Must be a valid month</p>
+            <p class="error-required-month">This field is required</p>
+          </div>
+
+          <div class="input__box">
+            <label class="label__name label__year" for="input__year"
+              >Year</label
+            >
+            <input
+              type="text"
+              class="input"
+              id="input__year"
+              maxlength="4"
+              minlength="4"
+              placeholder="YYYY"
+            />
+            <p class="error-year">Must be in the past</p>
+            <p class="error-required-year">This field is required</p>
+          </div>
+          <img
+            class="logo-validate"
+            src="./assets/images/icon-arrow.svg"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="output__box">
+          <p class="output__year">
+            <span class="output__year-input">- -</span> years
+          </p>
+          <p class="output__month">
+            <span class="output__month-input">- -</span> months
+          </p>
+          <p class="output__days">
+            <span class="output__day-input">- -</span> days
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
