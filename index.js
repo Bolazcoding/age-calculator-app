@@ -27,6 +27,7 @@ function validateAgeForm() {
     labelDay.style.color = 'hsl(0, 100%, 67%)';
     requiredDay.style.display = 'block';
     input_day.style.border = '1px solid hsl(0, 100%, 67%)';
+    // return false;
   } else if (day === 0 || day > 31 || day < 0) {
     labelDay.style.color = 'hsl(0, 100%, 67%)';
     errorDay.style.display = 'block';
@@ -90,6 +91,9 @@ function validateAgeForm() {
 
   calculateAge(day, month, year);
   isValidDate(day, month, year);
+
+  // console.log(yearNow);
+  // console.log(day);
 }
 
 function calculateAge(day, month, year) {
